@@ -6,4 +6,11 @@ The model trained on approximately 25% of the CAMELYON data, with a training AUC
 
 The data set is large (500GB+) and unbalanced (50 to 1 majority class imbalance). Preprocessing was done to target cancerous areas and train on balanced data, inputs were randomly rotated and flipped to augment the minority class. For each input, a zoomed out view of the same region was simultaneously input, to give context to the target region.
 
+ ![Alt text](figures/figure2.png?raw=true "Title")
+ 
+ Model architecture shown below. 
+ 
+  ![Alt text](figures/figure3.png?raw=true "Title")
+
+
 Much more work is to be done. The model has not exhaustively trained on all the data, work is limited by storage space and download speed of the large dataset, along with I/O quotas on Google Drive, which is where data was kept. Little cross validation has been done on hyperparameters. Finally, a more robust validation metric needs to be designed, to test not just patch accuracy but success at finding all tumors in an image, each of which are composed of multiple patches. This has only been done visually thus far.

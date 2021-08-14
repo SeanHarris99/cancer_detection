@@ -14,3 +14,5 @@ The data set is large (500GB+) and unbalanced (50 to 1 majority class imbalance)
 
 
 Much more work is to be done. The model has not exhaustively trained on all the data, work is limited by storage space and download speed of the large dataset, along with I/O quotas on Google Drive, which is where data was kept. Little cross validation has been done on hyperparameters. Finally, a more robust validation metric needs to be designed, to test not just patch accuracy but success at finding all tumors in an image, each of which are composed of multiple patches. This has only been done visually thus far.
+
+This project started as a final project in Joshua Gordon's 4995 Applied Deep Learning class at Columbia University in the Spring of 2021, and some of the above images were taken from a video made to explain the project code, found [here](https://www.youtube.com/watch?v=eHNgvjk_GxU).
